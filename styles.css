@@ -1,0 +1,61 @@
+.main {
+  position: relative;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.overlay-nav {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2; 
+}
+
+.overlay-nav a {
+  color: black !important; 
+  text-decoration: none;
+  margin: 0 15px; 
+}
+.overlay-text{
+  position: absolute;
+  left:9.5rem;
+  top:5rem;
+}
+.overlay-text p {
+  color: red;
+}
+.overlay-text h1{
+  font-size: 58px;
+  width: 35%;
+  color: blue
+
+}
+.overlay-text .description{
+  width:40%;
+}
+
+@media (max-width: 992px) {
+  .overlay-text {
+    left: 2rem; /* Adjust as needed for smaller screens */
+    top: 2rem; /* Adjust as needed for smaller screens */
+  }
+
+  .overlay-text h1 {
+    font-size: 36px; /* Adjust font size for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .overlay-text .description {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+}
+
+
+
