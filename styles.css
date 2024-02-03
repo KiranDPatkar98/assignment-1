@@ -1,35 +1,24 @@
 body{
   background: rgb(242, 241, 241) !important;
 }
-.main {
+.banner {
   position: relative;
   width: 100%;
+  background: url('images/Banner.png') center/100%  no-repeat;
+  background-position: top;
 }
 
-.banner {
-  width: 100%;
-  height: 100vh;
-  display: block;
+@media (max-width: 992px){
+.banner{
+  background : url('images/Banner.png') cover/100%;
+}
 }
 
-.overlay-nav {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 2; 
-}
 
 .overlay-nav a {
   color: black !important; 
   text-decoration: none;
-  margin: 0 15px; 
-}
-.overlay-text{
-  position: absolute;
-  left:9.5rem;
-  top:5rem;
+  margin: 0 10px; 
 }
 .overlay-text p {
   color: red;
@@ -120,7 +109,7 @@ body{
   padding: 0 20px;
 }
 
-.content-container h4{
+.content-container h6{
   margin-left: 20px;
 }
 .content-container .icon{
