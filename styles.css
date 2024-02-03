@@ -1,3 +1,6 @@
+body{
+  background: rgb(242, 241, 241) !important;
+}
 .main {
   position: relative;
   width: 100%;
@@ -86,3 +89,47 @@
 }
 
 
+.image-container {
+  flex: 1;
+  width: 50%;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.left-image,
+.right-image {
+ width:50%;
+}
+
+.left-image {
+  transform: rotate(-2deg);
+}
+
+.right-image {
+  transform: rotate(7deg);
+}
+
+.content-container {
+  flex: 1;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.content-container h4{
+  margin-left: 20px;
+}
+.content-container .icon{
+  color: red;
+}
+
+@media (max-width: 992px) {
+  .content-container,.left-image,.image-container,
+  .right-image{
+    width: 100%
+  }
+}
