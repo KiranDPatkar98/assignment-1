@@ -51,7 +51,6 @@ body{
 
 
 .course{
-  /* background: grey; */
   width:80%;
   background: #fff;
   margin: 0  auto;
@@ -63,13 +62,44 @@ body{
 }
 
 .course-description p{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
 }
 
-.custom-card{
+.custom-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%; 
   border-bottom: 1px solid grey;
 }
+
+.custom-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%; 
+  background-color: #fff; 
+}
+
+@media (max-width: 992px) {
+  .custom-card::before,
+  .custom-card::after {
+    content: none;
+  }
+
+  .custom-card {
+    border-bottom: 1px solid grey;
+  }
+}
+
 
 .find-course{
   background: rgb(63, 63, 223);
